@@ -26,13 +26,16 @@ The optimizer being utilised is "Adam," which thanks to its memory efficiency an
 Given that the output falls between [0,1], the "Sigmoid" activation function is utilised. 
 The LSTM is evaluated using various numbers of neurons with various numbers of hidden layers (e.g., 2, 3, 4). Underfitting results from adding more layers, and overfitting results from adding too few or too many neurons. The model was trained using a default learning rate over 5 epochs.
 
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/122580255/226148728-bc481100-a099-40b5-b7c7-47810479ce8a.png">
 
 ACCURACY OF TRAINING DATASET
 After 5 iterations, the model's training accuracy is 98.9% and its validation accuracy is 86.7 percent. 
 The training takes about 7 minutes every epoch, which is a reasonable length of time. 
 The model's training consumes a lot of memory. The memory use is higher and the execution is interrupted due to memory exhaustion while testing multiple strategies with various numbers of neurons in the hidden layers.
 
- 
+ <img width="496" alt="image" src="https://user-images.githubusercontent.com/122580255/226148739-d5343fe7-4d38-44cc-b2af-9ec27eabcf96.png">
+
 ACCURACY OF TESTING DATASET
 After preprocessing the test data and using the trained NLP model we achieve accuracy of 84.30%
  
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/122580255/226148747-e7546cb2-98b1-410d-b0f3-6369302c729c.png">
